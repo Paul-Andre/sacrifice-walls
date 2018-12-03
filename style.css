@@ -1,0 +1,69 @@
+#inner {
+	width: 100%;
+	max-width: 960px;
+	min-width: 240px;
+  display: table;
+  margin:0 auto;
+  padding: 0;
+}
+
+body {
+  background: #fff8c0;
+  color: #101024;
+}
+
+.nine {
+  font-family: nine;
+  font-size: 18px;
+}
+
+
+button {
+  margin: 4px;
+  background: #b27e56;
+  border: 2px solid #2a2a3a;
+  color: #101024;
+  font-family: nine;
+  font-size: 18px;
+  box-shadow: 4px 4px  #2a2a3a;
+}
+button.activeButton {
+  background: #80ac40;
+}
+
+button:active {
+  background: #d44e52;
+  top:4px;
+  left:4px;
+
+}
+
+
+
+@font-face {
+  font-family: "nine";
+  src: url("Nineteen Ninety Three 2.woff") format("woff");
+}
+
+#gameCanvas {
+	width: 100%;
+  padding: 0;
+  margin: 0;
+	max-width: 1280px;
+  display: table;
+  margin:0 auto;
+
+
+	image-rendering: pixelated;
+	image-rendering: optimizeSpeed;            /* STOP SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;          /* Firefox                        */
+	image-rendering: -o-crisp-edges;            /* Opera                          */
+	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+	image-rendering: pixelated; /* Chrome */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+	interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
+
+
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Walls, Borald!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "palette.js"></script>
+    <script src = "constants.js"></script>
+    <script src = "load.js"></script>
+    <script src = "tile.js"></script>
+    <script src = "entityHelpers.js"></script>
+    <script src = "rock.js"></script>
+    <script src = "pathing.js"></script>
+    <script src = "enemy.js"></script>
+    <script src = "bullet.js"></script>
+    <script src = "turret.js"></script>
+    <script src = "spriteRenderer.js"></script>
+    <script src = "waves.js"></script>
+    <script src = "game.js"></script>
+    <script src = "main.js"></script>
+
+
+  </head>
+  <body>
+    <div id="outer" style="width:100%">
+      <div id="inner">
+        <canvas id = "gameCanvas" width="240px" height="168px"> </canvas>
+        <div> 
+          <div id = "info">
+            <div id ="someText" class = "nine"> </div>
+          </div>
+          <button id="mineButton" class = "activeButton" > Mine </button>
+          <button id="smallTowerButton"> Build tower (150 brick) </button>
+          <button id="bigTowerButton"> Build long range tower (350 brick) </button>
+        </div>
+      </div>
+    </div>
+  <script>
+    main();
+  </script>
+  </body>
+</html>
